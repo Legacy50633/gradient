@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./grad.css" />
+    <title>Generate Random Linear-Gradient Backgrounds</title>
+  </head>
+  <body>
+    <div id="d">
+      <div id="d1"></div>
+      <div id="d2"><p id="p1">Gradient Generator...</p> </div>
+      <div id="d3"></div>
+    </div>
+    <div class="wrapper">
+      <div id="controls">
+        <div>
+          <label for="gradient-type">Gradient Type:</label>
+          <select id="gradient-type">
+            <option value="linear">Linear Gradient</option>
+            <option value="radial">Radial Gradient</option>
+          </select>
+        </div>
+        <div class="value_wrapper">
+          <div>
+            <label for="angle">Angle:</label>
+            <input type="range" id="angle" value="0" min="0" max="360" />
+          </div>
+          <div>
+            <label for="color-1">Color 1:</label>
+            <input type="color" id="color-1" value="#ff0000" />
+          </div>
+          <div>
+            <label for="color-2">Color 2:</label>
+            <input type="color" id="color-2" value="#00ff00" />
+          </div>
+        </div>
+        <button id="generate">Generate Random Gradient Background</button>
+        <button id="copy">Copy CSS</button>
+      </div>
+      <div id="background"></div>
+    </div>
+    <div class="message"></div>
+    <script src="./grad.js"></script>
+  </body>
+</html>
